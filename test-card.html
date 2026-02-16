@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"devhirisha crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0,0,0,0.6);
+            z-index: 0;
+        }
+        .lots-title{
+            font-family: Raleway;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            padding: 0 0 27px 40px;
+        }
+        .lots-list-card{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            gap: 25px;
+            height: 600px;
+        }
+        .item1{
+            background-image:url("1card.jpg");
+        }
+        .item2{
+            background-image:url("2card.png");
+        }
+        .item3{
+            background-image:url("3card.jpg");
+        }
+        .card-item{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+            max-width: 334px;
+        }
+        .card-content{
+            padding: 48px 40px;
+            z-index: 1;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .card-title{
+            font-family: Raleway;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 22px;
+            line-height: 120%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: white;
+
+        }
+        .card-text
+        {
+            font-family: Raleway;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: 0%;
+            color: white;
+        }
+    </style>
+    <main>
+    <section class="lots">
+    <h2 class="lots-title">лоты</h2>
+            <ul class="lots-list-card">
+                <li class="card-item item1">
+                <div class="overlay"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+                    <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                  </div>
+                </li>
+                <li class="card-item item2">
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                        <p class="card-text">
+                            Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                        </p>
+                    </div>
+                </li>
+                <li class="card-item item3">
+                    <div class="overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                        <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                    </div>
+                </li>
+            </ul>
+    </section>
+    </main>
+</body>
+</html>
